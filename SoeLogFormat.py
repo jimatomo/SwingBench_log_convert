@@ -12,7 +12,9 @@ def main(inputFilePath, outputFilePath):
         outputFilePath = inputFilePath
         if outputFilePath[-4:] == '.log':
             outputFilePath = outputFilePath[:-4] + '.csv'
-            
+        else:
+            outputFilePath = outputFilePath + '.csv'
+
     try:
         # opening file from inputFilePath
         with open(inputFilePath, newline='') as f:
