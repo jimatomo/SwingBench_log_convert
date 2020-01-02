@@ -1,0 +1,2 @@
+# SwingBench_log_convert
+swingbenchのログをcsvに変換するpythonスクリプト
