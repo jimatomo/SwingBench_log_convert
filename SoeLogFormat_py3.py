@@ -14,7 +14,9 @@ def main(inputFilePath, outputFilePath):
         outputFilePath = inputFilePath
         if outputFilePath[-4:] == '.log':
             outputFilePath = outputFilePath[:-4] + '.csv'
-            
+        else:
+            outputFilePath = outputFilePath + '.csv'
+    
     try:
         # inputFilePathからファイルを文字列として読み込む
         with open(inputFilePath, newline='') as f:
