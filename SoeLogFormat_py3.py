@@ -32,6 +32,7 @@ def main(inputFilePath, outputFilePath):
             writer = csv.writer(f, lineterminator="\n")
             writer.writerows(metricList)
 
+        print('converted {} to {} '.format(inputFilePath,outputFilePath))
         sys.exit()
         
     except (FileExistsError, FileNotFoundError) as e:
